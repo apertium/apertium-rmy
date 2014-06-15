@@ -1,0 +1,71 @@
+<dictionary>
+  <alphabet>abcdefghijklmnopqrstuvwxyz</alphabet>
+
+  <sdefs>
+    <sdef n="n"       c="Noun"/>
+    <sdef n="det"     c="Determiner"/>
+
+    <sdef n="ind"     c="Indefinite"/>
+
+    <sdef n="m"       c="Masculine"/>
+    <sdef n="f"       c="Feminine"/>
+
+    <sdef n="sg"      c="Singular"/>
+    <sdef n="pl"      c="Plural"/>
+
+    <sdef n="nom"     c="Nominative"/>
+    <sdef n="obl"     c="Oblique"/>
+    <sdef n="voc"     c="Vocative"/>
+
+  </sdefs>
+
+  <pardefs>
+
+    <!-- SECTION: Determiners -->
+
+    <pardef n="/ekh__det">
+      <e><p><l>ekh</l><r>ekh<s n="det"/><s n="ind"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e r="LR"><p><l>'kh</l><r>ekh<s n="det"/><s n="ind"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e r="LR"><p><l>eg</l><r>ekh<s n="det"/><s n="ind"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e><p><l>ekh</l><r>ekh<s n="det"/><s n="ind"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e r="LR"><p><l>'kh</l><r>ekh<s n="det"/><s n="ind"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e r="LR"><p><l>eg</l><r>ekh<s n="det"/><s n="ind"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e><p><l>ekhe</l><r>ekh<s n="det"/><s n="ind"/><s n="m"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>ekha</l><r>ekh<s n="det"/><s n="ind"/><s n="f"/><s n="sg"/><s n="obl"/></r></p></e>
+    </pardef>
+
+    <!-- SECTION: Nouns -->
+ 
+    <pardef n="rakl/o__n">
+      <e><p><l>o</l><r>o<s n="n"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e><p><l>es</l><r>o<s n="n"/><s n="m"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>eja</l><r>o<s n="n"/><s n="m"/><s n="sg"/><s n="voc"/></r></p></e>
+      <e><p><l>e</l><r>o<s n="n"/><s n="m"/><s n="pl"/><s n="nom"/></r></p></e>
+      <e><p><l>en</l><r>o<s n="n"/><s n="m"/><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l>ale</l><r>o<s n="n"/><s n="m"/><s n="pl"/><s n="voc"/></r></p></e>
+    </pardef>
+ 
+  </pardefs>
+
+  <section id="main" type="standard">
+    <!-- SECTION: Miscellaneous -->
+    <!-- SECTION: Conjunctions -->
+    <!-- SECTION: Postpositions -->
+    <!-- SECTION: Pronouns -->
+    <!-- SECTION: Determiners -->
+
+    <e lm="ekh"><i/><par n="/ekh__det"/></e>
+ 
+    <!-- SECTION: Numerals -->
+
+    <!-- SECTION: Nouns -->
+   
+    <e lm="raklo"><i>rakl</i><par n="rakl/o__n"/></e>
+
+    <!-- SECTION: Proper nouns -->
+    <!-- SECTION: Adjectives -->
+    <!-- SECTION: Adverbs -->
+    <!-- SECTION: Verbs -->
+  </section>
+
+</dictionary>
