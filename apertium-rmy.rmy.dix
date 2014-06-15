@@ -163,6 +163,33 @@
       <e><p><l></l><r><s n="n"/><s n="m"/><s n="nn"/></r></p><par n="S__sap"/></e>
     </pardef>
 
+    <pardef n="kavadj/a__n">
+      <e><p><l>a</l><r>a<s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e><p><l>a</l><r>a<s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>a</l><r>a<s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="obl"/></r></p><par n="S__rakles"/></e>
+      <e><p><l>i</l><r>a<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="nom"/></r></p></e>
+      <e><p><l>an</l><r>a<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l>an</l><r>a<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="obl"/></r></p><par n="S__raklen"/></e>
+    </pardef>
+
+    <pardef n="djel/a__n">
+      <e><p><l>a</l><r>a<s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e><p><l>a</l><r>a<s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>a</l><r>a<s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="obl"/></r></p><par n="S__rakles"/></e>
+      <e><p><l>i</l><r>a<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="nom"/></r></p></e>
+      <e><p><l>en</l><r>a<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l>en</l><r>a<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="obl"/></r></p><par n="S__raklen"/></e>
+    </pardef>
+
+    <pardef n="kot/o__n">
+      <e><p><l>o</l><r>o<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e><p><l>os</l><r>o<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>os</l><r>o<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/><s n="obl"/></r></p><par n="S__rakles"/></e>
+      <e><p><l>urja</l><r>o<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/><s n="nom"/></r></p></e>
+      <e><p><l>on</l><r>o<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l>on</l><r>o<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/><s n="obl"/></r></p><par n="S__raklen"/></e>
+    </pardef>
+
     <pardef n="jakh__n" c="FIXME: p.59">
       <e><p><l></l><r><s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
       <e><p><l>a</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="obl"/></r></p></e>
@@ -316,9 +343,11 @@
     <e lm="raklo"><i>rakl</i><par n="rakl/o__n"/></e>
     <e lm="rakli"><i>rakl</i><par n="rakl/i__n"/></e>
     <e lm="sap"><i>sap</i><par n="sap__n"/></e>
+    <e lm="koto"><i>kot</i><par n="kot/o__n"/></e>
     <e lm="kher" c="X"><i>kher</i><par n="sap__n"/></e>
     <e lm="kat"><i>kat</i><par n="kat__n"/></e>
     <e lm="jakh"><i>jakh</i><par n="jakh__n"/></e>
+    <e lm="djela"><i>djel</i><par n="jakh__n"/></e>
 
     <!-- SECTION: Proper nouns -->
     <!-- SECTION: Adjectives -->
