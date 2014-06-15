@@ -5,6 +5,8 @@
     <sdef n="n"       c="Noun"/>
     <sdef n="det"     c="Determiner"/>
     <sdef n="prn"     c="Pronoun"/>
+    <sdef n="post"    c="Postposition"/>
+    <sdef n="pr"      c="Preposition"/>
 
     <sdef n="ind"     c="Indefinite"/>
     <sdef n="def"     c="Definite"/>
@@ -32,47 +34,77 @@
 
   <pardefs>
 
+    <!-- SECTION: Adpositions -->
+
+    <pardef n="S__raklen">
+      <e><p><l>ge</l><r><j/>ke<s n="post"/></r></p></e>
+      <e><p><l>ca</l><r><j/>sa<s n="post"/></r></p></e>  <!-- FIXME: p. 67 ~ca or ~sa ? -->
+      <e><p><l>dar</l><r><j/>tar<s n="post"/></r></p></e>
+      <e><p><l>de</l><r><j/>te<s n="post"/></r></p></e>
+    </pardef>
+  
+    <pardef n="S__rakles">
+      <e><p><l>ke</l><r><j/>ke<s n="post"/></r></p></e>
+      <e><p><l>sa</l><r><j/>sa<s n="post"/></r></p></e>
+      <e><p><l>tar</l><r><j/>tar<s n="post"/></r></p></e>
+      <e><p><l>te</l><r><j/>te<s n="post"/></r></p></e>
+    </pardef>
+
+    <pardef n="agora__pr">
+      <e><p><l></l><r><s n="pr"/></r></p></e>
+    </pardef>
+
     <!-- SECTION: Pronouns -->
 
     <pardef n="/me__prn">
       <e><p><l>me</l><r>me<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
       <e><p><l>man</l><r>me<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>man</l><r>me<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="obl"/></r></p><par n="S__raklen"/></e>
       <e r="LR"><p><l>ma</l><r>me<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="obl"/></r></p></e>
     </pardef>
 
     <pardef n="/tu__prn">
       <e><p><l>tu</l><r>tu<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
       <e><p><l>tut</l><r>tu<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>tu</l><r>tu<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/><s n="obl"/></r></p><par n="S__rakles"/></e>
       <e r="LR"><p><l>tu</l><r>tu<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/><s n="obl"/></r></p></e>
     </pardef>
 
     <pardef n="/vov__prn">
       <e><p><l>vov</l><r>vov<s n="prn"/><s n="pers"/><s n="p3"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
       <e><p><l>les</l><r>vov<s n="prn"/><s n="pers"/><s n="p3"/><s n="m"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>leske</l><r>vov<s n="prn"/><s n="pers"/><s n="p3"/><s n="m"/><s n="sg"/><s n="obl"/><j/>ke<s n="post"/></r></p></e>
+      <e><p><l>lesa</l><r>vov<s n="prn"/><s n="pers"/><s n="p3"/><s n="m"/><s n="sg"/><s n="obl"/><j/>sa<s n="post"/></r></p></e>
+      <e><p><l>lestar</l><r>vov<s n="prn"/><s n="pers"/><s n="p3"/><s n="m"/><s n="sg"/><s n="obl"/><j/>tar<s n="post"/></r></p></e>
+      <e><p><l>leste</l><r>vov<s n="prn"/><s n="pers"/><s n="p3"/><s n="m"/><s n="sg"/><s n="obl"/><j/>te<s n="post"/></r></p></e>
       <e r="LR"><p><l>le</l><r>vov<s n="prn"/><s n="pers"/><s n="p3"/><s n="m"/><s n="sg"/><s n="obl"/></r></p></e>
     </pardef>
 
     <pardef n="/voj__prn">
       <e><p><l>voj</l><r>voj<s n="prn"/><s n="pers"/><s n="p3"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
       <e><p><l>lat</l><r>voj<s n="prn"/><s n="pers"/><s n="p3"/><s n="f"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>la</l><r>voj<s n="prn"/><s n="pers"/><s n="p3"/><s n="f"/><s n="sg"/><s n="obl"/></r></p><par n="S__rakles"/></e>
       <e r="LR"><p><l>la</l><r>voj<s n="prn"/><s n="pers"/><s n="p3"/><s n="f"/><s n="sg"/><s n="obl"/></r></p></e>
     </pardef>
 
     <pardef n="/ame__prn">
       <e><p><l>ame</l><r>ame<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
       <e><p><l>amen</l><r>ame<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l>amen</l><r>ame<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="obl"/></r></p><par n="S__raklen"/></e>
       <e r="LR"><p><l>ame</l><r>ame<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="obl"/></r></p></e>
     </pardef>
 
     <pardef n="/tume__prn">
       <e><p><l>tume</l><r>tume<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
       <e><p><l>tumen</l><r>tume<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l>tumen</l><r>tume<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="pl"/><s n="obl"/></r></p><par n="S__raklen"/></e>
       <e r="LR"><p><l>tume</l><r>tume<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="pl"/><s n="obl"/></r></p></e>
     </pardef>
 
     <pardef n="/von__prn">
       <e><p><l>von</l><r>von<s n="prn"/><s n="pers"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
       <e><p><l>len</l><r>von<s n="prn"/><s n="pers"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l>len</l><r>von<s n="prn"/><s n="pers"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="obl"/></r></p><par n="S__raklen"/></e>
       <e r="LR"><p><l>le</l><r>von<s n="prn"/><s n="pers"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="obl"/></r></p></e>
     </pardef>
 
@@ -105,9 +137,11 @@
     <pardef n="S__sap">
       <e><p><l></l><r><s n="sg"/><s n="nom"/></r></p></e>
       <e><p><l>es</l><r><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>es</l><r><s n="sg"/><s n="obl"/></r></p><par n="S__rakles"/></e>
       <e><p><l>a</l><r><s n="sg"/><s n="voc"/></r></p></e>
       <e><p><l>a</l><r><s n="pl"/><s n="nom"/></r></p></e>
       <e><p><l>en</l><r><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l>en</l><r><s n="pl"/><s n="obl"/></r></p><par n="S__raklen"/></e>
       <e><p><l>ale</l><r><s n="pl"/><s n="voc"/></r></p></e>
     </pardef>
 
@@ -122,36 +156,44 @@
     <pardef n="jakh__n" c="FIXME: p.59">
       <e><p><l></l><r><s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
       <e><p><l>a</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>a</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="obl"/></r></p><par n="S__rakles"/></e>
       <e><p><l>o</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="voc"/></r></p></e>
       <e><p><l>a</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="nom"/></r></p></e>
       <e><p><l>en</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l>en</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="obl"/></r></p><par n="S__raklen"/></e>
       <e><p><l>ale</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="voc"/></r></p></e>
     </pardef>
 
     <pardef n="kat__n">
       <e><p><l></l><r><s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
       <e><p><l>ja</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>ja</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="obl"/></r></p><par n="S__rakles"/></e>
       <e><p><l>o</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="voc"/></r></p></e>
       <e><p><l>ja</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="nom"/></r></p></e>
       <e><p><l>jan</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l>jan</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="obl"/></r></p><par n="S__raklen"/></e>
       <e><p><l>jale</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="voc"/></r></p></e>
     </pardef>
 
     <pardef n="rakl/o__n">
       <e><p><l>o</l><r>o<s n="n"/><s n="m"/><s n="aa"/><s n="sg"/><s n="nom"/></r></p></e>
       <e><p><l>es</l><r>o<s n="n"/><s n="m"/><s n="aa"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>es</l><r>o<s n="n"/><s n="m"/><s n="aa"/><s n="sg"/><s n="obl"/></r></p><par n="S__rakles"/></e>
       <e><p><l>eja</l><r>o<s n="n"/><s n="m"/><s n="aa"/><s n="sg"/><s n="voc"/></r></p></e>
       <e><p><l>e</l><r>o<s n="n"/><s n="m"/><s n="aa"/><s n="pl"/><s n="nom"/></r></p></e>
       <e><p><l>en</l><r>o<s n="n"/><s n="m"/><s n="aa"/><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l>en</l><r>o<s n="n"/><s n="m"/><s n="aa"/><s n="pl"/><s n="obl"/></r></p><par n="S__raklen"/></e>
       <e><p><l>ale</l><r>o<s n="n"/><s n="m"/><s n="aa"/><s n="pl"/><s n="voc"/></r></p></e>
     </pardef>
 
     <pardef n="rakl/i__n">
       <e><p><l>i</l><r>i<s n="n"/><s n="f"/><s n="aa"/><s n="sg"/><s n="nom"/></r></p></e>
       <e><p><l>ja</l><r>i<s n="n"/><s n="f"/><s n="aa"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>ja</l><r>i<s n="n"/><s n="f"/><s n="aa"/><s n="sg"/><s n="obl"/></r></p><par n="S__rakles"/></e>
       <e><p><l>ijo</l><r>i<s n="n"/><s n="f"/><s n="aa"/><s n="sg"/><s n="voc"/></r></p></e>
       <e><p><l>ja</l><r>i<s n="n"/><s n="f"/><s n="aa"/><s n="pl"/><s n="nom"/></r></p></e>
       <e><p><l>jan</l><r>i<s n="n"/><s n="f"/><s n="aa"/><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l>jan</l><r>i<s n="n"/><s n="f"/><s n="aa"/><s n="pl"/><s n="obl"/></r></p><par n="S__raklen"/></e>
       <e><p><l>jale</l><r>i<s n="n"/><s n="f"/><s n="aa"/><s n="pl"/><s n="voc"/></r></p></e>
     </pardef>
   
