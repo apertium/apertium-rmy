@@ -24,6 +24,7 @@
     <sdef n="pri"     c="Present"/>
     <sdef n="pii"     c="Imperfect"/>
     <sdef n="fti"     c="Future"/>
+    <sdef n="imp"     c="Imperative"/>
 
     <sdef n="tv"      c="Transitive"/>
     <sdef n="iv"      c="Intransitive"/>
@@ -271,6 +272,16 @@
       <e><p><l></l><r>o<s n="adj"/></r></p><par n="S__bar/o"/></e>
     </pardef>
 
+    <!-- SECTION: Adverbs -->
+
+    <pardef n="či__adv">
+      <e><p><l></l><r><s n="adv"/></r></p></e>
+    </pardef>
+
+    <pardef n="maj__adv">
+      <e><p><l></l><r><s n="adv"/></r></p></e>
+    </pardef>
+
     <!-- SECTION: Verbs -->
 
     <pardef n="/si__vbser">
@@ -312,6 +323,8 @@
       <e><p><l>ena</l><r><s n="vblex"/><s n="tv"/><s n="fti"/><s n="p2"/><s n="pl"/></r></p></e>
       <e><p><l>ena</l><r><s n="vblex"/><s n="tv"/><s n="fti"/><s n="p3"/><s n="pl"/></r></p></e>
     
+      <e><p><l></l><r><s n="vblex"/><s n="tv"/><s n="imp"/><s n="p2"/><s n="sg"/></r></p></e>
+      <e><p><l>en</l><r><s n="vblex"/><s n="tv"/><s n="imp"/><s n="p2"/><s n="pl"/></r></p></e>
     </pardef>
   
   </pardefs>
@@ -328,6 +341,7 @@
     <e lm="ka"><i>ka</i><par n="agora__pr"/></e>
     <e lm="karing"><i>karing</i><par n="agora__pr"/></e>
     <e lm="kata"><i>kata</i><par n="agora__pr"/></e>
+    <e lm="katar"><i>katar</i><par n="agora__pr"/></e>
     <e lm="krugom"><i>krugom</i><par n="agora__pr"/></e>
     <e lm="maškar"><i>maškar</i><par n="agora__pr"/></e>
     <e lm="pa"><i>pa</i><par n="agora__pr"/></e>
@@ -390,11 +404,16 @@
 
 
     <!-- SECTION: Adverbs -->
+
+    <e lm="maj"><i>maj</i><par n="maj__adv"/></e>
+    <e lm="či"><i>či</i><par n="či__adv"/></e>
+
     <!-- SECTION: Verbs -->
 
     <e lm="si"><i></i><par n="/si__vbser"/></e>
     <e lm="dikh"><i>dikh</i><par n="dikh__vblex"/></e>
   </section>
+
   <section id="final" type="inconditional">
     <e><re>[.!\?]+</re><p><l/><r><s n="sent"/></r></p></e>
     <e><p><l>,</l><r>,<s n="cm"/></r></p></e>
