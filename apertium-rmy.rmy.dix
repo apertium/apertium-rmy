@@ -14,6 +14,7 @@
 
     <sdef n="ind"     c="Indefinite"/>
     <sdef n="def"     c="Definite"/>
+    <sdef n="pos"     c="Possessive"/>
     <sdef n="pers"    c="Personal"/>
 
     <sdef n="p1"      c="First person"/>
@@ -249,15 +250,25 @@
 
     <!-- SECTION: Adjectives -->
 
+    <pardef n="S__bar/o">
+      <e><p><l>o</l><r><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e><p><l>i</l><r><s n="m"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>e</l><r><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e><p><l>ja</l><r><s n="f"/><s n="sg"/><s n="obl"/></r></p></e>
+      <e><p><l>e</l><r><s n="m"/><s n="pl"/><s n="nom"/></r></p></e>
+      <e><p><l>e</l><r><s n="m"/><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l>e</l><r><s n="f"/><s n="pl"/><s n="nom"/></r></p></e>
+      <e><p><l>e</l><r><s n="f"/><s n="pl"/><s n="obl"/></r></p></e>
+ 
+    </pardef>
+
+    <pardef n="murr/o__adj">
+      <e><p><l></l><r>o<s n="adj"/><s n="pos"/></r></p><par n="S__bar/o"/></e>
+    </pardef>
+
+
     <pardef n="bar/o__adj">
-      <e><p><l>o</l><r>o<s n="adj"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
-      <e><p><l>i</l><r>o<s n="adj"/><s n="m"/><s n="sg"/><s n="obl"/></r></p></e>
-      <e><p><l>e</l><r>o<s n="adj"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
-      <e><p><l>ja</l><r>o<s n="adj"/><s n="f"/><s n="sg"/><s n="obl"/></r></p></e>
-      <e><p><l>e</l><r>o<s n="adj"/><s n="m"/><s n="pl"/><s n="nom"/></r></p></e>
-      <e><p><l>e</l><r>o<s n="adj"/><s n="m"/><s n="pl"/><s n="obl"/></r></p></e>
-      <e><p><l>e</l><r>o<s n="adj"/><s n="f"/><s n="pl"/><s n="nom"/></r></p></e>
-      <e><p><l>e</l><r>o<s n="adj"/><s n="f"/><s n="pl"/><s n="obl"/></r></p></e>
+      <e><p><l></l><r>o<s n="adj"/></r></p><par n="S__bar/o"/></e>
     </pardef>
 
     <!-- SECTION: Verbs -->
@@ -365,6 +376,14 @@
 
     <!-- SECTION: Proper nouns -->
     <!-- SECTION: Adjectives -->
+
+    <e lm="murro"><i>murr</i><par n="murr/o__adj"/></e>
+    <e lm="tjiro"><i>tjir</i><par n="murr/o__adj"/></e>
+    <e lm="lesko"><i>lesk</i><par n="murr/o__adj"/></e>
+    <e lm="lako"><i>lak</i><par n="murr/o__adj"/></e>
+    <e lm="amaro"><i>amar</i><par n="murr/o__adj"/></e>
+    <e lm="tumaro"><i>tumar</i><par n="murr/o__adj"/></e>
+    <e lm="lengo"><i>leng</i><par n="murr/o__adj"/></e>
 
     <e lm="baro"><i>bar</i><par n="bar/o__adj"/></e>
     <e lm="purrano"><i>purran</i><par n="bar/o__adj"/></e>
