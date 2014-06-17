@@ -9,6 +9,7 @@
     <sdef n="adj"     c="Adjectives"/>
     <sdef n="prn"     c="Pronoun"/>
     <sdef n="post"    c="Postposition"/>
+    <sdef n="spost"   c="Postposition"/>
     <sdef n="pr"      c="Preposition"/>
 
     <sdef n="ind"     c="Indefinite"/>
@@ -49,11 +50,19 @@
 
     <!-- SECTION: Adpositions -->
 
+    <pardef n="S__k/o">
+      <e><p><l>o</l><r><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>a</l><r><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>e</l><r><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>i</l><r><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
+
     <pardef n="S__raklen">
       <e><p><l>ge</l><r><j/>ke<s n="post"/></r></p></e>
       <e><p><l>ca</l><r><j/>sa<s n="post"/></r></p></e>  <!-- FIXME: p. 67 ~ca or ~sa ? -->
       <e><p><l>dar</l><r><j/>tar<s n="post"/></r></p></e>
       <e><p><l>de</l><r><j/>te<s n="post"/></r></p></e>
+      <e><p><l>g</l><r><j/>ko<s n="spost"/></r></p><par n="S__k/o"/></e>
     </pardef>
   
     <pardef n="S__rakles">
@@ -61,6 +70,7 @@
       <e><p><l>sa</l><r><j/>sa<s n="post"/></r></p></e>
       <e><p><l>tar</l><r><j/>tar<s n="post"/></r></p></e>
       <e><p><l>te</l><r><j/>te<s n="post"/></r></p></e>
+      <e><p><l>k</l><r><j/>ko<s n="spost"/></r></p><par n="S__k/o"/></e>
     </pardef>
 
     <pardef n="agora__pr">
