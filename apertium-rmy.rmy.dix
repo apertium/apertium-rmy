@@ -345,7 +345,7 @@
     <e lm="rakli"><i>rakl</i><par n="rakl/i__n"/></e>
     <e lm="sap"><i>sap</i><par n="sap__n"/></e>
     <e lm="koto"><i>kot</i><par n="kot/o__n"/></e>
-    <e lm="kher" c="X"><i>kher</i><par n="sap__n"/></e>
+    <e lm="kher" c="X"><i>kher</i><par n="kher__n"/></e>
     <e lm="kat"><i>kat</i><par n="kat__n"/></e>
     <e lm="jakh"><i>jakh</i><par n="jakh__n"/></e>
     <e lm="djela"><i>djel</i><par n="jakh__n"/></e>
@@ -354,6 +354,7 @@
     <!-- SECTION: Adjectives -->
 
     <e lm="baro"><i>bar</i><par n="bar/o__adj"/></e>
+    <e lm="purrano"><i>purran</i><par n="bar/o__adj"/></e>
 
 
     <!-- SECTION: Adverbs -->
