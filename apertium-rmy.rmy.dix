@@ -1,5 +1,5 @@
 <dictionary>
-  <alphabet>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</alphabet>
+  <alphabet>ABCDEFGHIJKLMNOPQRSTUVWXYZŽŠabcdefghijklmnopqrstuvwxyzžš</alphabet>
 
   <sdefs>
     <sdef n="n"       c="Noun"/>
